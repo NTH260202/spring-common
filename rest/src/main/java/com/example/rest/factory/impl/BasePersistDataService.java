@@ -4,7 +4,9 @@ import com.example.rest.factory.IPersistDataService;
 import com.example.rest.model.IModel;
 import com.thanhha.exception.InvalidException;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.transaction.annotation.Transactional;
 
+@Transactional
 public abstract class BasePersistDataService<I, T extends IModel<I>, D extends T, A, E>
     extends BaseDataService<I, T, D> implements IPersistDataService<T, D, E> {
     protected final PagingAndSortingRepository<E, A> repository;
