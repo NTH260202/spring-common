@@ -1,7 +1,44 @@
 dependencies {
+    api project(':exception')
+
+    /**
+     * Spring
+     */
+    implementation("org.springframework.data:spring-data-commons:$springDataCommonsVersion")
+    implementation("org.springframework:spring-tx:$springFrameworkVersion")
+
+    /**
+     * Spring boot
+     */
+    implementation("org.springframework.boot:spring-boot-autoconfigure:$springBootVersion")
+
+    /**
+     * Spring framework
+     */
+    implementation("org.springframework:spring-context:$springFrameworkVersion")
+
+    /**
+     * Spring
+     */
+    implementation("org.springframework:spring-web:$springFrameworkVersion")
+
     /**
      * Lombok
      */
     compileOnly("org.projectlombok:lombok:$lombokVersion")
     annotationProcessor("org.projectlombok:lombok:$lombokVersion")
+
+    /**
+     * Jakarta
+     */
+    implementation("jakarta.persistence:jakarta.persistence-api:$persistenceApiVersion")
+    compileOnly("jakarta.servlet:jakarta.servlet-api:$servletApiVersion")
+    implementation "jakarta.validation:jakarta.validation-api:$validationApiVersion"
+
+
+    /**
+     * Jackson
+     */
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+
 }

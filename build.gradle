@@ -25,6 +25,24 @@ subprojects {
          * Lombok
          */
         lombokVersion = '1.18.24'
+
+        /**
+         * Spring
+         */
+        springDataCommonsVersion = '2.7.6'
+        springFrameworkVersion = '5.3.24'
+
+        /**
+         * Jakarta
+         */
+        persistenceApiVersion = '2.2.3'
+        servletApiVersion = '4.0.4'
+        validationApiVersion = '2.0.2'
+
+        /**
+         * Jackson
+         */
+        jacksonVersion = '2.14.0'
     }
     repositories {
         mavenLocal()

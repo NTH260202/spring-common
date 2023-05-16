@@ -1,2 +1,3 @@
 rootProject.name = 'spring-common'
 include 'rest'
+include 'exception'

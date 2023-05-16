@@ -1,0 +1,12 @@
+dependencies {
+    /**
+     * Lombok
+     */
+    compileOnly("org.projectlombok:lombok:$lombokVersion")
+    annotationProcessor("org.projectlombok:lombok:$lombokVersion")
+
+    /**
+     * Spring
+     */
+    implementation("org.springframework:spring-web:$springFrameworkVersion")
+}
